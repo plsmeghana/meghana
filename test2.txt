@@ -1,0 +1,23 @@
+What is a version control system? 
+
+A version control system or VCS, also know as revision control or source control system, is a software utility that tracks 
+and manages changes to a filesystem. A VCS also offers collaborative utilities to share and integrate these filesystem
+changes to other VCS users. When operating at the filesystem level, a VCS will track the addition, deletion, and
+modification actions applied to files and directories. A repository is a VCS term which describes when VCS is tracking
+a filesystem. In the scope of individual source code files, a VCS will track additions, deletions, modifications of the
+lines of text within that file. Popular software industry VCS options include Git, Mercurial, SVN and preforce.
+
+Why do I need version control software? 
+
+VCS is an invaluable tool with many benefits to a collaborative software team workflow. Any software project that has more
+than one developer maintaining source code files should absolutely use a VCS. Additionally, sole-maintainer projects will
+also greatly benefit from utilizing a VCS. There is arguably no valid reason to forgo the use of a VCS in any modern
+software development project.
+
+The benefits of version control tools :
+
+Integrating a VCS into a software development project enables a variety of organizational and management benefits. 
+By default, a VCS on its own offers the previously discussed technical benefits of team conflict resolution and collaboration aides.
+A hosted VCS service wraps a default VCS and gives enhanced features. This 'enhanced VCS' is incredibly powerful and gives a
+transparent view into the software development process, which can traditionally be an opaque creative endeavor. The following points
+are some high-level benefits a hosted VCS offers.
