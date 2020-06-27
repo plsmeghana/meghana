@@ -1,53 +1,50 @@
-<Html>  
+<!DOCTYPE HTML>
+<html>  
 <head>   
 <title>  
 Registration Page  
 </title>  
+
 </head>  
 <body bgcolor="Lightskyblue">  
 <br>  
 <br>  
-<form>  
+<form method="post" action="redirect.php" >
   
 <label> Firstname </label>         
-<input type="text" name="firstname" size="15"/> <br> <br>  
+<input type="text" name="firstname"  size="15"/> <br> <br>  
 <label> Middlename: </label>     
-<input type="text" name="middlename" size="15"/> <br> <br>  
+<input type="text" name="middlename"   size="15"/> <br> <br>  
 <label> Lastname: </label>         
 <input type="text" name="lastname" size="15"/> <br> <br>  
  
 <label>   
 Gender :  
 </label><br>  
-<input type="radio" name="male"/> Male <br>  
-<input type="radio" name="female"/> Female <br>  
-<input type="radio" name="other"/> Other    
-<label>   
-Phone :  
-</label>  
-<input type="text" name="country code"  value="+91" size="2"/>   
-<input type="text" name="phone" size="10"/> <br> <br> 
-
+<input type="radio" name="gender" value="male"/> Male <br>  
+<input type="radio" name="gender" value="female"/> Female <br>  
+<input type="radio" name="other"/> Other
+<br> <br>
 <label>   
 choice of selection :  
 </label><br>  
-<input type="radio" name="bachelors"/> Bachelors <br>  
-<input type="radio" name="masters"/> Masters <br>  
+<input type="radio" name="choice" value="bachelors"/> Bachelors <br>  
+<input type="radio" name="choice" value="masters"/> Masters <br>  
  <br>
 Description  
 <br>  
-<textarea cols="80" rows="5" value="address">  
+<textarea cols="80" rows="5" name="address">  
 </textarea>  
 <br> <br>  
 <label>
 Subject of interests :
 </label><br>
-<input type="checkbox" name="sub1" value="tennis">FLAT<br>
-<input type="checkbox" name="sub2" value="football">DAA<br>
-<input type="checkbox" name="sub3" value="baseball">OS<br>
-<input type="checkbox" name="sub4" value="badminton">DS<br>
+<input type="checkbox" name="sub[]" id ="sub" value="FLAT">FLAT<br>
+<input type="checkbox" name="sub[]" id ="sub" value="DAA">DAA<br>
+<input type="checkbox" name="sub[]" id ="sub" value="OS">OS<br>
+<input type="checkbox" name="sub[]" id ="sub" value="DS">DS<br>
 <br> 
-<input type="button" value="Submit"/>  
+<input type="submit" name="Submit" value="submit"/>  
 </form>  
 </body>  
 </html>  
