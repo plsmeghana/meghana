@@ -1,15 +1,33 @@
 <!DOCTYPE HTML>
-<html>  
+<html lang="en">  
 <head>   
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <title>  
-Registration Page  
-</title>  
+Registration Page 
+</title>
+<style> 
+body {
+
+  background-color: lightblue;
+  font-size: 20px;
+color: red;
+font-style: italic;
+font-family: "Times New Roman", Times, serif;
+
+}
+h2{
+font-family: verdana;
+color:black;
+text-align :center;
+text-shadow: 2px 2px;
+}
+
+</style>
 
 </head>  
-<body bgcolor="Lightskyblue">  
-<br>  
-<br>  
+<body>   
 <form method="post" action="redirect.php" >
+<h2>REGISTRATION FORM</h2>
   
 <label> Firstname </label>         
 <input type="text" name="firstname"  size="15"/> <br> <br>  
@@ -39,10 +57,10 @@ Description
 <label>
 Subject of interests :
 </label><br>
-<input type="checkbox" name="sub[]" id ="sub" value="FLAT">FLAT<br>
-<input type="checkbox" name="sub[]" id ="sub" value="DAA">DAA<br>
-<input type="checkbox" name="sub[]" id ="sub" value="OS">OS<br>
-<input type="checkbox" name="sub[]" id ="sub" value="DS">DS<br>
+<input type="checkbox" name="sub[]"  value="FLAT">FLAT<br>
+<input type="checkbox" name="sub[]"  value="DAA">DAA<br>
+<input type="checkbox" name="sub[]"  value="OS">OS<br>
+<input type="checkbox" name="sub[]"  value="DS">DS<br>
 <br> 
 <input type="submit" name="Submit" value="submit"/>  
 </form>  
