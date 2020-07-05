@@ -37,33 +37,58 @@ text-align: center;
   </tr>
   <tr>
     <td>DAA</td>
-    <td>86</td>
+    <td id="s1">86</td>
   </tr>
   <tr>
     <td>FLAT</td>
-    <td>87</td>
+    <td id="s2">87</td>
   </tr>
   <tr>
     <td>OS</td>
-    <td>95</td>
+    <td id="s3">95</td>
     
   </tr>
   <tr>
     <td>R Programming</td>
-    <td>91</td>
+    <td id="s4">91</td>
 
   </tr>
   <tr>
     <td>Software Engineering</td>
-    <td>81</td>
+    <td id="s5">81</td>
   
   </tr>
   <tr>
     <td>Open Systems for Web Technology</td>
-    <td>95</td>
+    <td id="s6">95</td>
+ 
+  </tr>
+<tr>
+    <td>Total</td>
+    <td id="val"></td>
+ 
+  </tr>
+<tr>
+    <td>Average</td>
+    <td id="val1"></td>
  
   </tr>
 </table>
-
+<script>
+var a=document.getElementById("s1");
+var b=document.getElementById("s2");
+var c=document.getElementById("s3");
+var d=document.getElementById("s4");
+var e=document.getElementById("s5");
+var f=document.getElementById("s6");
+var g=parseInt(a.innerText);
+var h=parseInt(b.innerText);
+var i=parseInt(c.innerText);
+var j=parseInt(d.innerText);
+var k=parseInt(e.innerText);
+var l=parseInt(f.innerText);
+document.getElementById("val").innerHTML=(g+h+i+j+k+l);
+document.getElementById("val1").innerHTML=(g+h+i+j+k+l)/6;
+</script>
 </body>
 </html>
