@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Fibonacci Generator </h1>
+
+<input type="text" id="myNumber">
+
+<p>Enter a number to generate Fibonacci array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    var n = document.getElementById("myNumber").value;
+    document.getElementById("demo").innerHTML = fibonacciGenerator (n);
+}
+
+var sequence = [0]; // sequence = []; if you want sequence [1] = 1;
+var previousNumber = 1;
+var presentNumber = 0;
+var sum = 0;
+ 
+function fibonacciGenerator (n) {
+  
+    while (sequence.length < n) {
+     sum = previousNumber + presentNumber;
+     previousNumber = presentNumber;
+     presentNumber = sum;
+     sequence.push(sum);
+     
+    }
+    return (sequence);
+}
+</script>
+
+
+<p id="demo"></p>
+
+
+</body>
+</html>

@@ -4,12 +4,25 @@
 
 <h1>My First Web Page</h1>
 <p>My First Paragraph</p>
+<button onclick="displayDate()">The time is?</button>
+Enter your name: <input type="text" onfocus="myFunction(this)">
 
 <script>
 var x=10;
 var y=20;
+var date = new Date();
+console.log(date.toDateString());
 console.log(x+y);
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+function myFunction(x) {
+  x.style.background = "pink";
+}
+
 </script>
+<p id="demo"></p>
+
 
 </body>
 </html>
